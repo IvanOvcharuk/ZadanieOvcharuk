@@ -10,8 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+var liczba = 1
         findViewById<Button>(R.id.button).setOnClickListener {
-            findViewById<ImageView>(R.id.obrazek).setImageResource(R.drawable.kot)
+            if(liczba == 1)
+                liczba = 4
+            else if(liczba)
         }
     }
 }
